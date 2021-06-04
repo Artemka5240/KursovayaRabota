@@ -12,4 +12,5 @@
 
 Ссылка на tesseract - https://github.com/tesseract-ocr/tesseract
 Ссылка на шрифты - https://cloud.mail.ru/public/csiz/pbfDhj1xg
-Ссылка на презентацию проекта - 
+Ссылка на презентацию проекта - https://cloud.mail.ru/public/5iVY/5Xispt3cB
+Ссылка на инструкцию по запуску-установке - https://cloud.mail.ru/public/BxG2/GzvDrMdx9 
