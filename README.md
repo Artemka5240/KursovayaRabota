@@ -14,6 +14,13 @@
 
 ## Требования: ##
 Наличие установленного tesseract https://github.com/tesseract-ocr/tesseract
+Наличие установленного pipenv https://github.com/pypa/pipenv
+Python >= 3.9
+
+## Установка: ##
+```console
+pipenv install
+```
 
 ## Обучение Tesseract. ##
 - Запускаем программу PyCharm.
@@ -22,6 +29,7 @@
 - Вызываем скрипт trainer.py.
 
 ## Распознавание капч: ##
-```
+```console
+pipenv shell
 python app/img_recognition.py "images/{путь к капче}"
 ```
