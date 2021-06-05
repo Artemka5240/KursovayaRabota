@@ -11,17 +11,20 @@
 
 
 Ссылка на tesseract - https://github.com/tesseract-ocr/tesseract
-Ссылка на шрифты - https://cloud.mail.ru/public/csiz/pbfDhj1xg
 Ссылка на презентацию проекта - https://cloud.mail.ru/public/5iVY/5Xispt3cB
 
 Инструкция по запуску/установке : 
-1.	Проверяем наличие на компьютере следующих библиотек: tesseract, PIL, operator, math, re, os, subprocess, numpy.
-2.	Обучение Tesseract.
-2.1.	Запускаем программу PyCharm.
-2.2.	Вызываем функцию imageWithoutGarbage.
-2.3.	Вызываем функцию createBoxFile.
-2.4.	Вызываем скрипт trainer.py.
-2.5.	перенести созданный файл *.traineddata в корневую папку tessdata: $cp /path/to/data/*.traineddata $TESSDATA_PREFIX/tessdata
-3.	Распознавание капч.
-3.1.	Вызываем функцию captchaRecognition.
+1.	Проверяем наличие на компьютере следующих библиотек: tesseract
 
+2.	Обучение Tesseract.
+
+2.1.	Запускаем программу PyCharm.
+
+2.2.	Вызываем функцию imageWithoutGarbage.
+
+2.3.	Вызываем функцию createBoxFile.
+
+2.4.	Вызываем скрипт trainer.py.
+
+3.	Распознавание капч.
+3.1 python app/img_recognition.py "images/{путь к капче}"
