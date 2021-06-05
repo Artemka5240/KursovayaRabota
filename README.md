@@ -13,9 +13,9 @@
 Ссылка на презентацию проекта - https://cloud.mail.ru/public/5iVY/5Xispt3cB
 
 ## Требования: ##
-Наличие установленного tesseract https://github.com/tesseract-ocr/tesseract
-Наличие установленного pipenv https://github.com/pypa/pipenv
-Python >= 3.9
+- Установленный tesseract https://github.com/tesseract-ocr/tesseract
+- Установленный pipenv https://github.com/pypa/pipenv
+- Python >= 3.9
 
 ## Установка: ##
 ```console
