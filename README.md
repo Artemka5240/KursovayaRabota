@@ -11,6 +11,7 @@
 - Обучить tesseract, распознать captcha c шумом и без него
 
 Ссылка на презентацию проекта - https://cloud.mail.ru/public/5iVY/5Xispt3cB
+Ссылка на капчи для обучения - https://cloud.mail.ru/public/2H1t/iLKMafPYE
 
 ## Требования: ##
 - Установленный tesseract https://github.com/tesseract-ocr/tesseract
