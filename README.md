@@ -19,6 +19,8 @@
 
 ## Установка: ##
 ```console
+git clone https://github.com/Artemka5240/KursovayaRabota.git
+cd KursovayaRabota
 pipenv install
 ```
 
