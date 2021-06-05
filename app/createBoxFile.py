@@ -37,11 +37,13 @@ def imageWithoutGarbage(path):
     # угол поворота
     angled = re.findall(r'_(\-?\d*).gif', path)
 
-    if int(angled[0]) > 0:
-        image = image.rotate(- int(angled[0]))
+    if len(angled):
 
-    if int(angled[0]) < 0:
-        image = image.rotate(-int(angled[0]))
+        if int(angled[0]) > 0:
+            image = image.rotate(- int(angled[0]))
+
+        if int(angled[0]) < 0:
+            image = image.rotate(-int(angled[0]))
 
     # Получаем гистограмму изображения в виде списка
     his = image.histogram()

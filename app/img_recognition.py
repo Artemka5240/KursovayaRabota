@@ -23,16 +23,16 @@ def captchaDirRecognition(path):
 
 def captchaRecognition(captcha):
 
-    captchaName = re.findall(r'.*?ttf_(.*?)_', captcha)
-    captchaName = re.sub(r'.png', '', captchaName[0])
+    # captchaName = re.findall(r'.*?ttf_(.*?)_', captcha)
+    # captchaName = re.sub(r'.png', '', captchaName[0])
 
     result = pytesseract.image_to_string(imageWithoutGarbage(str(captcha)), lang='arial+campanella+montesuma+times+ryuk+minecraft+eng', config='--tessdata-dir ' + TRAINED_ROOT)
     result = re.sub(r'\n.*', '', result)
-    print(captchaName)
+    # print(captchaName)
     print(result)
-    if captchaName == result:
-        return True
-    return False
+    # if captchaName == result:
+    #     return True
+    # return False
 
 
 if __name__ == '__main__':
@@ -40,4 +40,4 @@ if __name__ == '__main__':
     if not path:
         print('Вы не указали путь к изображению')
         sys.exit()
-    print(captchaRecognition(path))
+    captchaRecognition(path)
