@@ -5,8 +5,7 @@ import pytesseract
 from createBoxFile import imageWithoutGarbage
 
 
-ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../')
-TRAINED_ROOT = os.path.join(ROOT, 'traineddata/')
+TRAINED_ROOT = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../'), 'traineddata/')
 
 
 def captchaDirRecognition(path):
@@ -27,7 +26,7 @@ def captchaRecognition(captcha):
     captchaName = re.findall(r'.*?ttf_(.*?)_', captcha)
     captchaName = re.sub(r'.png', '', captchaName[0])
 
-    result = pytesseract.image_to_string(imageWithoutGarbage(ROOT + str(captcha)), lang='arial+campanella+montesuma+times+ryuk+minecraft+eng', config='--tessdata-dir ' + TRAINED_ROOT)
+    result = pytesseract.image_to_string(imageWithoutGarbage(str(captcha)), lang='arial+campanella+montesuma+times+ryuk+minecraft+eng', config='--tessdata-dir ' + TRAINED_ROOT)
     result = re.sub(r'\n.*', '', result)
     print(captchaName)
     print(result)
